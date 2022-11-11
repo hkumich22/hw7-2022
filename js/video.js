@@ -45,7 +45,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip");
-	if (video.currentTime = video.duration){
+	if (video.currentTime == video.duration){
 		video.currentTime = 0;
 }
 	video.currentTime += 10;
@@ -54,13 +54,13 @@ document.querySelector("#skip").addEventListener("click", function() {
 // click mute
 
 document.querySelector("#mute").addEventListener("click", function() {
-	if (button.innerHTML == "Mute") {
+	if (document.querySelector("#mute").innerHTML == "Mute") {
 		video.muted = true;
-		button.innerHTML = "Unmute";
+		document.querySelector("#mute").innerHTML = "Unmute";
 		console.log("Muted");
 	}
 	else {
-		button.innerHTML = "Mute";
+		document.querySelector("#mute").innerHTML = "Mute";
 		video.muted = false;
 		console.log("Unmuted");
 	}
