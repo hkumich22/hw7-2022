@@ -2,7 +2,7 @@ var video;
 
 // loading
 
-window.addEventListener("load, function()" {
+window.addEventListener("load", function() {
 	console.log("Good job opening the window");
 	video = document.querySelector("#player1");
 	video.loop = false;
@@ -43,7 +43,7 @@ document.querySelector("#faster").addEventListener("click", function() {
 
 // click skip
 
-document.querySelector(#"skip").addEventListener("click", function() {
+document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip");
 	if (video.currentTime = video.duration){
 		video.currentTime = 0;
