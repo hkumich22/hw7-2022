@@ -30,6 +30,7 @@ document.querySelector("#pause").addEventListener("click", function() {
 document.querySelector("#slower").addEventListener("click", function() {
 	console.log("Slow Down");
 	video.playbackRate *= 0.9;
+	console.log("Speed is" + video.playbackRate)
 
 });
 
@@ -38,6 +39,7 @@ document.querySelector("#slower").addEventListener("click", function() {
 document.querySelector("#faster").addEventListener("click", function() {
 	console.log("Go Faster");
 	video.playbackRate /= 0.9;
+	console.log("Speed is " + video.playbackRate)
 
 });
 
@@ -72,6 +74,7 @@ document.querySelector("#slider").oninput = function() {
 	console.log("Volume adjusted");
 	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value + "%";
 	video.volume = document.querySelector("#slider").value / 100;
+	console.log("Volume " + video.volume)
 
 };
 
